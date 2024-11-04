@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\grpc">
+      <UniqueIdentifier>{1315fe3f-2c6e-4b1f-a6fd-265406a70a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\server">
+      <UniqueIdentifier>{3c70f2aa-4b25-4446-b9bc-c1a89eb2f961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dataStructures">
+      <UniqueIdentifier>{0eed9277-4764-40dc-8454-f574f7087ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{fa3c2b11-1011-4335-ac15-78943c1a4a0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="server.cpp">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+    <ClCompile Include="clientsCollection.cpp">
+      <Filter>Source Files\dataStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="chat.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="chat.grpc.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="serverMain.cpp">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="server.h">
+      <Filter>Source Files\server</Filter>
+    </ClInclude>
+    <ClInclude Include="dataStructures.h">
+      <Filter>Source Files\dataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="clientsCollection.h">
+      <Filter>Source Files\dataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="chat.pb.h">
+      <Filter>Source Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="chat.grpc.pb.h">
+      <Filter>Source Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chat.proto">
+      <Filter>Source Files\grpc</Filter>
+    </None>
+  </ItemGroup>
+</Project>

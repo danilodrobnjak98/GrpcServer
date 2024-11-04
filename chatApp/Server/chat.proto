@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package ChatApp;
+
+service ChatApplication
+{
+	rpc RegisterClient(stream RegisterReq) returns (stream RegisterResp);
+	rpc ChooseParticipant(stream ChooseParticipantReq) returns (stream ChooseParticipantResp);
+	rpc SendMessageClient(stream SendMessageReq) returns (stream SendMessageResp);
+}
+
+message RegisterReq
+{
+	string name = 1;
+}
+
+message RegisterResp
+{
+	string messageConfirmation = 1;
+}
+
+message ChooseParticipantReq
+{
+	string clientName = 1;
+	string partnerName = 2;
+}
+
+message ChooseParticipantResp
+{
+	string confirmation = 1;
+}
+
+message SendMessageReq
+{
+	string sendMessageReq = 1;
+	string client = 2;
+	string partnerName = 3;
+}
+
+message SendMessageResp
+{
+	string sendMessageResp = 1;
+}

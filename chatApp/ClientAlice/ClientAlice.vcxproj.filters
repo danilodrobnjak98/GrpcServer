@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\grpc">
+      <UniqueIdentifier>{86626666-4948-490b-8f59-ea470fdbf8cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client">
+      <UniqueIdentifier>{d421b3b6-9f7a-45af-9844-9f2b6599d713}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Server\chat.pb.h">
+      <Filter>Source Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Server\chat.grpc.pb.h">
+      <Filter>Source Files\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="client.h">
+      <Filter>Source Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Source Files\client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Server\chat.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Server\chat.grpc.pb.cc">
+      <Filter>Source Files\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="client.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+    <ClCompile Include="clientMain.cpp">
+      <Filter>Source Files\client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Server\chat.proto">
+      <Filter>Source Files\grpc</Filter>
+    </None>
+  </ItemGroup>
+</Project>
